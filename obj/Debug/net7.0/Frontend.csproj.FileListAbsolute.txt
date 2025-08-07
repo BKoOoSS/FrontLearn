@@ -1,0 +1,15 @@
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.AssemblyInfo.cs
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\berke\OneDrive\Masaüstü\Frontend\bin\Debug\net7.0\Frontend.exe
+C:\Users\berke\OneDrive\Masaüstü\Frontend\bin\Debug\net7.0\Frontend.deps.json
+C:\Users\berke\OneDrive\Masaüstü\Frontend\bin\Debug\net7.0\Frontend.runtimeconfig.json
+C:\Users\berke\OneDrive\Masaüstü\Frontend\bin\Debug\net7.0\Frontend.dll
+C:\Users\berke\OneDrive\Masaüstü\Frontend\bin\Debug\net7.0\Frontend.pdb
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.dll
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\refint\Frontend.dll
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.pdb
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\Frontend.genruntimeconfig.cache
+C:\Users\berke\OneDrive\Masaüstü\Frontend\obj\Debug\net7.0\ref\Frontend.dll
