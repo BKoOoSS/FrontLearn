@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Frontend
-build_property.ProjectDir = C:\Users\berke\OneDrive\Masaüstü\Frontend\
+build_property.ProjectDir = /Users/ilkedemirkir/Berke_İlke/FrontLearn-1/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

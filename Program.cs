@@ -1,6 +1,36 @@
 ﻿// First Commit testing {
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;              
+using Microsoft.Extensions.Configuration; 
+using FrontLearn_1.Data;
+using FrontLearn_1.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddControllers();
+
+
+var app = builder.Build();
+
+
+app.MapControllers();
+app.Run();
+
+
+
+
+
+
+    
 public partial class Program
 {
+    /*
     static void Main()
     {
         Random random = new Random();
@@ -34,5 +64,6 @@ public partial class Program
 
         Console.WriteLine($"Tebrikler! {denemeSayisi} denemede doğru tahmin ettiniz.");
     }
+    */
 }  
 
