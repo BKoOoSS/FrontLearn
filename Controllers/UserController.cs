@@ -17,11 +17,11 @@ public class UserController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> AddUser([FromBody] User user)
     {
-        if (user == null || string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
+        if (user == null || string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
             return BadRequest("Invalid user data.");
 
         await _userService.AddUserAsync(user);
-        return Ok("User added successfully.");
+        return Ok(new {message = "User added successfully."});
     }
 
     public record LoginRequest(string Email, string Password);
@@ -35,7 +35,7 @@ public class UserController : ControllerBase
         if (user == null || user.Password != request.Password)
             return Unauthorized("Invalid email or password.");
 
-        return Ok("Login successful.");
+        return Ok(new {message = "Login successful."});
     }
 
     
@@ -60,7 +60,7 @@ public class UserController : ControllerBase
     [HttpPut("update")]
     public async Task<IActionResult> UpdateUser([FromBody] User user)
     {
-        if (user == null || user.Id <= 0 || string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
+        if (user == null || user.Id <= 0 || string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password))
             return BadRequest("Invalid user data.");
 
         var updated = await _userService.UpdateUserAsync(user);

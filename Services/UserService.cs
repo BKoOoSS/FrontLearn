@@ -33,7 +33,7 @@ public class UserService
         var existingUser = await GetUserByIdAsync(user.Id);
         if (existingUser == null) return false;
 
-        existingUser.Name = user.Name;
+        existingUser.Username = user.Username;
         existingUser.Email = user.Email;
         existingUser.Password = user.Password;
         existingUser.UpdatedAt = DateTime.Now;
